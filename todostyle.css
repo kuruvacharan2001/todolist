@@ -1,0 +1,186 @@
+body{
+    background-color: gray;
+    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.card{
+    background-color: white;
+    width:60vw;
+    height:auto;
+    margin: 10vh 20vw 10vh 20vw;
+    box-shadow: 5px;
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 10px;
+   
+    
+
+}
+/* heading */
+
+.heading{
+    width:100%;
+    height:20%;
+    background-color: rgb(88, 77, 77);
+    color: white;
+    text-align: center;
+    font: 1.5em serif;
+}
+/* main */
+.main{
+    
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    
+   align-items: center;
+    text-align: center;
+}
+/* input field */
+.todoinput{
+    width:80%;
+    height:3.2rem;
+    border-radius: 1rem;
+   margin: 2rem 2rem 0.5rem 2rem;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+.todoinput input{
+    width:80%;
+    vertical-align: middle;
+    font-size: x-large;
+    
+    font-weight: 700;
+    border: none;
+    background-color: lightgray;
+    outline: none;
+}
+.todoinput label span{
+    font-size: xx-large;
+    font-weight: 700;
+    margin-top:7px;
+   
+}
+.todoinput button span{
+    font-size: xx-large;
+    font-weight: 900;
+    margin-top:7px;
+   
+}
+.todoinput button{
+    border: none;
+    background-color: lightgray;
+    outline: none;
+   display: none;
+}
+ /* matter */
+.matter{
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+    color: rgb(183, 187, 187);
+    
+}
+/* todos field */
+.todos{
+   
+    width: 80%;
+    
+}
+.todos ul{
+    
+   padding-left: 0;
+   list-style-type: none;
+   
+}
+.todos ul li{
+    position: relative;
+    display: flex;
+   
+    flex-direction: row;
+    justify-content: space-between;
+    height:3rem;
+   
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: lightgray;
+    
+}
+.todos ul li div{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    cursor: pointer;
+   
+}
+
+.todos ul li label{
+    
+    width:80%;
+    
+    font-size: x-large;
+    
+    font-weight: 700;
+    border: none;
+   text-align: left;
+   padding-left: 1rem;
+   cursor: pointer;
+}
+.todos ul li input:checked + label{
+    text-decoration-line: line-through;
+    cursor: pointer;
+}
+.todos ul li button{
+    
+    border: none;
+    color: red;
+    background-color: lightgray;
+    outline: none;
+    cursor: pointer;
+  display: none;
+}
+.todos ul li input{
+   
+    cursor: pointer;
+   margin-left: 1rem;
+    background-color: aliceblue;
+   border: none;
+    border-radius: 1rem;
+}
+
+.todos ul li:hover button{
+    
+    display: inline;
+}
+/* footer */
+.footer{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: auto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10%;
+    text-align: center;
+    color: rgb(32, 31, 35);
+}
+.footer button{
+    background: none;
+    outline: none;
+    border: none;
+    color: rgb(126, 124, 124);
+    
+}
+.footer button:hover{
+    font-size: large;
+    color: rgb(8, 8, 8);
+}
